@@ -1,0 +1,92 @@
+:root{
+  --color-acento: #2bd3ce;
+  --color-acento-claro: #5d5c5b33;
+  --color-texto: black;
+  --color-texto2: whitesmoke;
+  --color-acento-oscuro: #292929;
+}
+
+body{
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #525252
+}
+
+h3, p{
+  margin: 5px;
+}
+
+.escondido{
+  display: none;
+}
+
+a{
+  background-color: unset;
+  border:unset;
+  cursor:pointer;
+  text-decoration: none;
+  color: var(--color-texto2);
+}
+
+a:hover:not(#cart), button:hover{
+  color: var(--color-acento);
+  transition: 200ms;
+}
+
+/* Header */
+header{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.09);
+  margin-bottom: 10px;
+  font-size: larger;
+  background-color: #292929;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 60px; 
+}
+
+#logo{
+  height: 40px;
+  margin: 20px;
+}
+
+header nav div{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+
+header nav img{
+  height: 25px;
+}
+
+#cuenta-carrito{
+  position: absolute;
+  background-color: var(--color-texto2);
+  border-radius: 100%;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  aspect-ratio: 1;
+  text-align: center;
+  color: var(--color-texto);
+}
+
+footer{
+  text-align: center;
+  box-shadow: -1px -3px 5px rgba(0, 0, 0, 0.09);
+  padding-top: 2px;
+  margin-top: auto;
+  background-color: var(--color-acento-oscuro);
+  color: var(--color-texto2);
+}
+
+footer a{
+  text-decoration: underline;
+}
